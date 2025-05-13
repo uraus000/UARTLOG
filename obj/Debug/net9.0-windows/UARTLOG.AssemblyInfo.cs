@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UARTLOG")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2b529756f78cdca54a67a6a2b82182524e8a8d76")]
 [assembly: System.Reflection.AssemblyProductAttribute("UARTLOG")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UARTLOG")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -50,6 +50,7 @@
                 this.button6 = new System.Windows.Forms.Button();
                 this.button7 = new System.Windows.Forms.Button();
                 this.button8 = new System.Windows.Forms.Button();
+                this.lable = new System.Windows.Forms.Label();
                 this.SuspendLayout();
                 // 
                 // comboBox1
@@ -210,8 +211,10 @@
                 this.button5.Name = "button5";
                 this.button5.Size = new System.Drawing.Size(118, 48);
                 this.button5.TabIndex = 8;
-                this.button5.Text = "Log Path";
+                this.button5.Text = "Log Start";
                 this.button5.UseVisualStyleBackColor = true;
+
+                this.lable.Location = new System.Drawing.Point(444,70);
                 // 
                 // button6
                 // 
@@ -267,6 +270,7 @@
                 this.Controls.Add(this.comboBox3);
                 this.Controls.Add(this.comboBox2);
                 this.Controls.Add(this.comboBox1);
+                this.Controls.Add(this.lable);
                 this.MaximumSize = new System.Drawing.Size(1146, 928);
                 this.MinimumSize = new System.Drawing.Size(1146, 928);
                 this.Name = "Form1";
@@ -300,5 +304,6 @@
             private System.Windows.Forms.Button button6;
             private System.Windows.Forms.Button button7;
             private System.Windows.Forms.Button button8;
+            private System.Windows.Forms.Label lable;
     }
 }

@@ -1,32 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Work\\UARTLOG\\UARTLOG.csproj": {}
+    "Z:\\Work\\UARTLOG\\UARTLOG\\UARTLOG.csproj": {}
   },
   "projects": {
-    "D:\\Work\\UARTLOG\\UARTLOG.csproj": {
+    "Z:\\Work\\UARTLOG\\UARTLOG\\UARTLOG.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Work\\UARTLOG\\UARTLOG.csproj",
+        "projectUniqueName": "Z:\\Work\\UARTLOG\\UARTLOG\\UARTLOG.csproj",
         "projectName": "UARTLOG",
-        "projectPath": "D:\\Work\\UARTLOG\\UARTLOG.csproj",
-        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "D:\\Work\\UARTLOG\\obj\\",
+        "projectPath": "Z:\\Work\\UARTLOG\\UARTLOG\\UARTLOG.csproj",
+        "packagesPath": "C:\\Users\\50015\\.nuget\\packages\\",
+        "outputPath": "Z:\\Work\\UARTLOG\\UARTLOG\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\50015\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0-windows"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
