@@ -103,7 +103,7 @@ namespace UARTLOG
         public bool LogFunc(string Description)
         {
             string DirPath = LogPath;
-            string filename = DateTime.Now.ToString("yyyy_MM") + "_Uart.log";
+            string filename = DateTime.Now.ToString("yyyy_MM_dd") + "_Uart.log";
             string FullPath = Path.Combine(DirPath, filename);
 
             if(!Directory.Exists(DirPath)) { Directory.CreateDirectory(DirPath); }
@@ -207,6 +207,7 @@ namespace UARTLOG
             DateTime TimeStamp = DateTime.Now;
             byte []RxBuf = new byte[999];
             byte RxIndex = 0;
+            bool NewlineFlag = false;
             while(ThreadRun)
             {
                 isConnected = serial.IsOpen;
@@ -219,6 +220,7 @@ namespace UARTLOG
                             if(RxIndex == 0) {  TimeStamp = DateTime.Now;   }
                             ReadTimeStamp = DateTime.Now;
                             RxBuf[RxIndex++] = (byte)serial.ReadByte();
+                            NewlineFlag = true;
                          }
                          
                          if((RxIndex > 0 ) && ((DateTime.Now - ReadTimeStamp).TotalMilliseconds > 5))
@@ -231,6 +233,11 @@ namespace UARTLOG
                                 
                                 serial.DiscardInBuffer();
                             }
+                         }
+                         if(NewlineFlag && (((DateTime.Now - ReadTimeStamp).TotalSeconds > 5)))
+                         {
+                            NewlineFlag = false;
+                            m_Main.LogQueue.Enqueue(String.Format("[{0}] Mute!!\r\n",label));
                          }
                     }
                 }
